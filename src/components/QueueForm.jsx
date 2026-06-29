@@ -18,14 +18,14 @@ export default function QueueForm({add}) {
          <form className="queue-form" onSubmit={handleSubmit}>
             <h2> Add to queue </h2>
             <div className="form-group">
-                <input placeholder="Customer name" value={name} onChange = {(e) => setName(e.target.value)} type="text" />
+                <input placeholder="Patient name" value={name} onChange = {(e) => setName(e.target.value)} type="text" />
             </div>
             <div className="form-group">
                 <select value={service} onChange={(e) => setService(e.target.value)}>
-                    <option value="">Select Services</option>
-                    <option value="consultation">Consultation</option>
-                    <option value="payment">Payment</option>
-                    <option value="support">Support</option>
+                    <option value="">Select Care</option>
+                    <option value="Emergency">Emergency</option>
+                    <option value="FullBodyCheckup">Full Body Checkup</option>
+                    <option value="OutPatient">Out Patient</option>
                     </select>   
             </div>
             <button type="submit"> <FaUserPlus /> Add to Queue </button>

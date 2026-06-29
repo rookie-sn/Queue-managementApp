@@ -107,3 +107,70 @@ button:hover {
   opacity: 0.9;
 }
 
+.queue-display {
+  background: var(--surface);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.queue-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.queue-item {
+  background: var(--background);
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.patient-info h3 {
+  margin: 0;
+  color: var(--text);
+}
+
+.patient-info p {
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
+}
+
+.status {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actions button {
+  width: auto;
+  padding: 0.5rem 1rem;
+}
+
+.serve-btn {
+  background: var(--success);
+}
+
+.complete-btn {
+  background: var(--info);
+}
+
+.remove-btn {
+  background: var(--error);
+}
+
+.empty-queue {
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
